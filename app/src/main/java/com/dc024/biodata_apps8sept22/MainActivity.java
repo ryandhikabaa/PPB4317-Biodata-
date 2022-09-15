@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 if (!etText1.getText().toString().trim().equalsIgnoreCase("")){
                     Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                     intent.putExtra("EXTRA_TEXT1", etText1.getText().toString().trim());
+                    intent.putExtra("EXTRA_IMAGE", R.drawable.profile);
                     startActivity(intent);
                 }else {
                     Toast.makeText(MainActivity.this, "Pesan Tidak Boleh Kosong" , Toast.LENGTH_SHORT);
